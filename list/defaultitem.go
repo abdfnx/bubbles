@@ -41,12 +41,12 @@ func NewDefaultItemStyles() (s DefaultItemStyles) {
 
 	s.SelectedTitle = lipgloss.NewStyle().
 		Border(lipgloss.NormalBorder(), false, false, false, true).
-		BorderForeground(lipgloss.Color("#2161C6")).
-		Foreground(lipgloss.Color("#0E54C2")).
+		BorderForeground(lipgloss.Color("#0E54C2")).
+		Foreground(lipgloss.Color("#1163E6")).
 		Padding(0, 0, 0, 1)
 
 	s.SelectedDesc = s.SelectedTitle.Copy().
-		Foreground(lipgloss.Color("#1163E6"))
+		Foreground(lipgloss.Color("#2161C6"))
 
 	s.DimmedTitle = lipgloss.NewStyle().
 		Foreground(lipgloss.AdaptiveColor{Light: "#A49FA5", Dark: "#777777"}).
