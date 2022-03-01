@@ -56,10 +56,10 @@ func DefaultStyles() (s Styles) {
 		Foreground(lipgloss.AdaptiveColor{Light: "#8E8E8E", Dark: "#747373"})
 
 	s.FilterPrompt = lipgloss.NewStyle().
-		Foreground(lipgloss.AdaptiveColor{Light: "#04B575", Dark: "#ECFD65"})
+		Foreground(lipgloss.Color("#1163E6"))
 
 	s.FilterCursor = lipgloss.NewStyle().
-		Foreground(lipgloss.AdaptiveColor{Light: "#EE6FF8", Dark: "#EE6FF8"})
+		Foreground(lipgloss.Color("#1163E6"))
 
 	s.DefaultFilterCharacterMatch = lipgloss.NewStyle().Underline(true)
 
